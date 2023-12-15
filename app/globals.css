@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  /* Next 14 fix: https://github.com/vercel/next.js/issues/51721 */
+  scroll-behavior: smooth !important;
+}
+
+@layer utilities {
+  .clip-path-1 {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  }
+}
