@@ -4,6 +4,7 @@ import Image from "next/image"
 import Container from "./Container"
 import { NAV_LINKS } from "@/consts"
 import MobileNav from "./MobileNav"
+import ThemeWrapper from "./ThemeWrapper"
 
 const NavBar = () => {
   return (
@@ -13,6 +14,8 @@ const NavBar = () => {
           <Link href="/">
             <Image src={logo} alt="Valerio Mattera" height={48} />
           </Link>
+
+          <ThemeWrapper />
 
           <MobileNav />
 

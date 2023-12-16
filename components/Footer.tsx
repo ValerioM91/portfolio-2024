@@ -5,7 +5,7 @@ import { NETWORKS } from "@/consts"
 
 const Footer = () => {
   return (
-    <footer className="bg-base-content py-6 text-base-100 md:py-12">
+    <footer className="bg-[#272341] py-6 text-white md:py-12">
       <Container className="flex flex-col items-center justify-center gap-3">
         <Link href="#hero" className="text-2xl">
           <FaAngleUp />
