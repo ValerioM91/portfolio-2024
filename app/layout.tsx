@@ -1,7 +1,13 @@
 import type { Metadata } from "next"
 import { cookies } from "next/headers"
-import { chakraPetch } from "@/utils/fonts"
+import { Chakra_Petch } from "next/font/google"
 import "./globals.css"
+
+const chakraPetch = Chakra_Petch({
+  variable: "--chakraPetch",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+})
 
 export const metadata: Metadata = {
   title: "Valerio Mattera",
@@ -14,7 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="en" data-theme={themeValue} className="scroll-smooth">
-      <body className={`${chakraPetch.className} ${chakraPetch.variable} relative text-base-content antialiased`}>
+      <body
+        className={`${chakraPetch.className} ${chakraPetch.variable} relative font-chakraPetch text-base-content antialiased`}
+      >
         {children}
       </body>
     </html>

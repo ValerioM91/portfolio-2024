@@ -20,8 +20,8 @@ const About = () => {
           </p>
 
           <p>
-            If you&apos;re interested in collaborating or simply wish to have a chat about whether Lewis Hamilton is or
-            is not the GOAT, feel free to contact me at{" "}
+            If you&apos;re interested in collaborating or simply wish to have a chat about whether Lewis Hamilton is the
+            GOAT or not, feel free to contact me at{" "}
             <Link className="underline underline-offset-4" href="mailto:info@valeriomattera.com">
               info@valeriomattera.com
             </Link>

@@ -5,13 +5,13 @@ import Container from "./Container"
 
 const Footer = () => {
   return (
-    <footer className="bg-[#272341] py-6 text-white md:py-12">
+    <footer className="bg-[#333] py-6 text-white md:py-12">
       <Container className="flex flex-col items-center justify-center gap-3">
         <Link href="#hero" className="text-2xl">
           <FaAngleUp />
         </Link>
 
-        <div className="grid grid-cols-3 items-center gap-4 text-xl md:text-2xl">
+        <div className="mt-2 grid grid-cols-3 items-center gap-4 text-lg md:text-xl">
           {NETWORKS.map(network => {
             const { icon: Icon, url, text } = network
             return (
@@ -24,7 +24,7 @@ const Footer = () => {
                 className="inline-flex flex-col items-center"
               >
                 <Icon />
-                <p>{text}</p>
+                <p className="mt-1">{text}</p>
               </a>
             )
           })}
