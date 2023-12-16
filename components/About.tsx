@@ -1,16 +1,18 @@
+import Link from "next/link"
+import Title from "./Title"
+
 const About = () => {
   return (
     <section
-      id="hero"
-      className="lg:clip-path-1 flex flex-col items-center gap-6 bg-gradient-pattern bg-clip-padding px-4 py-12 lg:pb-28"
+      id="about"
+      className="lg:clip-path-1 flex flex-col items-center gap-6 bg-gradient-pattern px-4 py-12 lg:pb-36"
     >
-      <h2 className="text-3xl font-bold uppercase text-base-100 sm:text-4xl">About me</h2>
-
-      <div className="flex max-w-prose flex-col gap-4 text-lg text-base-100 lg:text-xl">
+      <Title title="About me" className="text-base-100" />
+      <div className="flex max-w-prose flex-col gap-4 text-center text-lg text-base-100 md:text-left lg:text-xl">
         <p>
-          Hello, I&apos;m a Senior Engineer based in Birmingham with a focus on Front End development. My areas of
-          expertise include TypeScript, React, React Native, and proficiency in frameworks like Next.js and Remix.
-          Additionally, I have experience in backend development, primarily with Node.js.
+          Hello! I&apos;m a Senior Engineer based in Birmingham with a focus on Frontend development. My areas of
+          expertise include TypeScript, React, React Native, and frameworks like Next.js and Remix. Additionally, I have
+          experience in Backend development, primarily with Node.js.
         </p>
 
         <p>
@@ -19,8 +21,12 @@ const About = () => {
         </p>
 
         <p>
-          If you&apos;re interested in collaborating or simply wish to have a chat on whether Lewis Hamilton is the
-          GOAT, feel free to connect with me through the link below.
+          If you&apos;re interested in collaborating or simply wish to have a chat about whether Lewis Hamilton is or is
+          not the GOAT, feel free to contact me at{" "}
+          <Link className="underline underline-offset-4" href="mailto:info@valeriomattera.com">
+            info@valeriomattera.com
+          </Link>
+          .
         </p>
       </div>
     </section>

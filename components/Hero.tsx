@@ -12,7 +12,7 @@ const Hero = () => {
             Valerio Mattera
           </span>
           ,
-          <br />a senior frontend engineer
+          <br />a Senior Frontend engineer
         </h1>
 
         <Button variant="outline" as="link" href="#about">

@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="en" data-theme={themeValue} className="scroll-smooth">
-      <body className={`${chakraPetch.className} ${chakraPetch.variable} text-base-content antialiased`}>
+      <body className={`${chakraPetch.className} ${chakraPetch.variable} relative text-base-content antialiased`}>
         {children}
       </body>
     </html>
