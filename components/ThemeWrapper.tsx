@@ -3,7 +3,7 @@ import ThemeToggle, { type Theme } from "./ThemeToggle"
 
 const ThemeWrapper = () => {
   const cookieStore = cookies()
-  const themeValue = (cookieStore.get("vm91-theme")?.value || "light") as Theme
+  const themeValue = cookieStore.get("vm91-theme")?.value as Theme | undefined
 
   return <ThemeToggle initialValue={themeValue} />
 }

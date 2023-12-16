@@ -3,11 +3,7 @@ import Title from "./Title"
 
 const About = () => {
   return (
-    <section
-      id="about"
-      // className="lg:clip-path-1 relative flex flex-col items-center gap-6 bg-gradient-pattern px-4 py-12 before:absolute before:inset-0 before:-z-10 before:bg-base-100 lg:pb-36"
-      className="bg-base-100"
-    >
+    <section id="about" className="bg-base-200">
       <div className="lg:clip-path-1 flex flex-col items-center gap-6 bg-gradient-pattern px-4 py-12 lg:pb-36">
         <Title title="About me" className="text-white" />
         <div className="flex max-w-prose flex-col gap-4 text-center text-lg text-white md:text-left lg:text-xl">

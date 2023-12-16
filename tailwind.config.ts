@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss"
 import { fontFamily } from "tailwindcss/defaultTheme"
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -32,18 +33,20 @@ const config: Config = {
       {
         light: {
           ...require("daisyui/src/theming/themes")["light"],
-          primary: "#6973be",
+          primary: "#646FC4",
           secondary: "#4255d4",
           "base-content": "#272341",
+          "base-200": "#fff",
         },
       },
       {
         dark: {
           ...require("daisyui/src/theming/themes")["dark"],
-          primary: "#6973be",
+          primary: "#747BB4",
           secondary: "#009cde",
           accent: "#84235d",
           "base-content": "#eeeeee",
+          "base-200": "#121212",
         },
       },
     ], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]

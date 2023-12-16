@@ -1,12 +1,12 @@
+import Image from "next/image"
 import { PROJECTS } from "@/consts"
 import Container from "./Container"
 import Title from "./Title"
-import Image from "next/image"
 import Button from "./Button"
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-base-100">
+    <section id="projects" className="bg-base-200">
       <Container className="max-w-6xl py-10">
         <Title title="Projects" className="mb-6 md:mb-12" />
 

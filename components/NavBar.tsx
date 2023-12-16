@@ -1,8 +1,8 @@
 import Link from "next/link"
-import logo from "../images/logo-blue.png"
 import Image from "next/image"
-import Container from "./Container"
+import logo from "../images/logo-blue.png"
 import { NAV_LINKS } from "@/consts"
+import Container from "./Container"
 import MobileNav from "./MobileNav"
 import ThemeWrapper from "./ThemeWrapper"
 
@@ -15,22 +15,25 @@ const NavBar = () => {
             <Image src={logo} alt="Valerio Mattera" height={48} />
           </Link>
 
-          <ThemeWrapper />
+          <div className="flex items-center gap-4">
+            <ThemeWrapper />
+            <MobileNav />
 
-          <MobileNav />
-
-          <ul className="hidden sm:flex">
-            {NAV_LINKS.map(link => {
-              const { id, text, url } = link
-              return (
-                <li key={id}>
-                  <Link className="inline-block min-w-[7rem] text-center text-xl text-primary" href={url}>
-                    {text}
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
+            <nav>
+              <ul className="hidden sm:flex">
+                {NAV_LINKS.map(link => {
+                  const { id, text, url } = link
+                  return (
+                    <li key={id}>
+                      <Link className="inline-block p-2 text-center text-xl text-primary md:min-w-[7rem]" href={url}>
+                        {text}
+                      </Link>
+                    </li>
+                  )
+                })}
+              </ul>
+            </nav>
+          </div>
         </div>
       </Container>
     </div>

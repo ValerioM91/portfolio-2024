@@ -1,11 +1,11 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import Button from "./Button"
+import Link from "next/link"
 import { FaBars } from "react-icons/fa6"
 import { FaTimes } from "react-icons/fa"
 import { NAV_LINKS } from "@/consts"
-import Link from "next/link"
+import Button from "./Button"
 
 const MobileNav = () => {
   const [showNav, setShowNav] = useState(false)
