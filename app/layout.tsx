@@ -21,7 +21,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" data-theme={themeValue} className="scroll-smooth">
       <body
-        className={`${chakraPetch.className} ${chakraPetch.variable} relative font-chakraPetch text-base-content antialiased`}
+        suppressHydrationWarning
+        className={`${chakraPetch.className} ${chakraPetch.variable} relative animate-[fade-in_1s] font-chakraPetch text-base-content antialiased`}
       >
         {children}
       </body>

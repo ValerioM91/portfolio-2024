@@ -3,6 +3,7 @@ import { PROJECTS } from "@/consts"
 import Container from "./Container"
 import Title from "./Title"
 import Button from "./Button"
+import Link from "next/link"
 
 const Projects = () => {
   return (
@@ -62,7 +63,15 @@ const SingleProject = ({ project }: { project: (typeof PROJECTS)[number] }) => {
         </div>
       </div>
 
-      <Image src={img} alt={title} width={700} height={400} className="w-full self-center md:col-span-3" />
+      <Link href={url} className="md:col-span-3">
+        <Image
+          src={img}
+          alt={title}
+          width={700}
+          height={400}
+          className="max-h-96 w-full self-center object-cover object-top shadow-lg"
+        />
+      </Link>
     </div>
   )
 }

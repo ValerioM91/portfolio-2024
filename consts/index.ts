@@ -1,6 +1,8 @@
 import vplayer1 from "../images/v-player1.jpg"
+import activityFinder from "../images/activity-finder.jpg"
 import shootemup from "../images/shootemup.jpg"
 import books from "../images/books-blog.jpg"
+import jesandjoe from "../images/jesandjoe.jpg"
 import { FaFile, FaGithub, FaLinkedin } from "react-icons/fa6"
 // import quiz from "../images/quiz.jpg"
 // import vplayer1 from "../images/vvvvv"
@@ -32,6 +34,22 @@ export const NAV_LINKS = [
 ]
 
 export const PROJECTS = [
+  {
+    img: activityFinder,
+    title: `Activity Finder`,
+    info: [`Next.js Full Stack app (App Router)`, `Server actions`, `Tailwind CSS`, `Prisma ORM`, `OpenAI API`],
+    info2: "",
+    url: "https://activity-finder-valeriom91.vercel.app/",
+    repo: "https://github.com/ValerioM91/activity-finder",
+  },
+  {
+    img: jesandjoe,
+    title: `Jes and Joe`,
+    info: [`Next.js Front end`, `Builder.io CMS`, `Tailwind CSS`],
+    info2: "",
+    url: "https://jesandjoe.uk",
+    repo: "https://github.com/ValerioM91/jesandjoe",
+  },
   {
     img: vplayer1,
     title: `V-Player 1`,

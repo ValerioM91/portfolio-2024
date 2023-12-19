@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#333] py-6 text-white md:py-12">
       <Container className="flex flex-col items-center justify-center gap-3">
-        <Link href="#hero" className="text-2xl">
+        <Link href="#hero" className="text-2xl" aria-label="Navigate to the top">
           <FaAngleUp />
         </Link>
 

@@ -16,7 +16,7 @@ const MobileNav = () => {
 
   return (
     <>
-      <Button className="sm:hidden" variant="outline" onClick={() => setShowNav(true)}>
+      <Button className="sm:hidden" variant="outline" onClick={() => setShowNav(true)} aria-label="Open mobile menu">
         <FaBars />
       </Button>
       <div
@@ -25,7 +25,7 @@ const MobileNav = () => {
         }`}
       >
         <div className="flex justify-end p-4">
-          <Button variant="outline-white" onClick={() => setShowNav(false)}>
+          <Button variant="outline-white" onClick={() => setShowNav(false)} aria-label="Close mobile menu">
             <FaTimes />
           </Button>
         </div>

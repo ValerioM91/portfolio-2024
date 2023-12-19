@@ -21,6 +21,10 @@ const config: Config = {
           "1%": { transform: "scale(0.5)", opacity: "1" },
           "100%": { transform: "scale(1)", opacity: "1" },
         },
+        "fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
       },
       fontFamily: {
         chakraPetch: ["var(--chakraPetch)", ...fontFamily.sans],

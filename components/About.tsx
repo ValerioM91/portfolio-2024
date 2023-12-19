@@ -15,8 +15,8 @@ const About = () => {
 
           <p>
             When I&apos;m not working or studying, I enjoy a range of activities. I&apos;m an avid video game
-            enthusiast, a regular at the gym, and a keen follower of TV series and sports, with a special interest in
-            Formula 1.
+            enthusiast, a regular at the gym, I read books, comics and manga and I&apos;m a keen follower of TV series
+            and sports, with a special interest in Formula 1.
           </p>
 
           <p>
