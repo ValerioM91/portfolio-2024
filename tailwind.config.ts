@@ -22,7 +22,7 @@ const config: Config = {
           "100%": { transform: "scale(1)", opacity: "1" },
         },
         "fade-in": {
-          "0%": { opacity: "10%" },
+          "0%": { opacity: "1%" },
           "100%": { opacity: "100%" },
         },
       },
