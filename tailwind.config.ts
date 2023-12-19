@@ -22,8 +22,8 @@ const config: Config = {
           "100%": { transform: "scale(1)", opacity: "1" },
         },
         "fade-in": {
-          "0%": { opacity: "0" },
-          "100%": { opacity: "1" },
+          "0%": { opacity: "10%" },
+          "100%": { opacity: "100%" },
         },
       },
       fontFamily: {

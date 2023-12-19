@@ -50,6 +50,7 @@ const ThemeToggle = ({ initialValue }: { initialValue?: Theme }) => {
         className={`relative box-content h-6 w-12 shrink-0 cursor-pointer appearance-none rounded-full border-2 border-primary after:absolute after:top-0 after:m-1 after:h-4 after:w-4 after:rounded-full after:bg-primary after:transition-all ${
           theme === "dark" ? "after:translate-x-6" : ""
         }`}
+        aria-label="Toggle theme"
       />
       <svg
         width="20"
