@@ -25,7 +25,11 @@ const NavBar = () => {
                   const { id, text, url } = link
                   return (
                     <li key={id}>
-                      <Link className="inline-block p-2 text-center text-xl text-primary md:min-w-[7rem]" href={url}>
+                      <Link
+                        className="inline-block p-2 text-center text-xl text-primary md:min-w-[7rem]"
+                        href={url}
+                        prefetch={link.prefetch || true}
+                      >
                         {text}
                       </Link>
                     </li>

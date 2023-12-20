@@ -34,7 +34,7 @@ const MobileNav = () => {
             {NAV_LINKS.map(link => {
               return (
                 <li key={link.id}>
-                  <Link className="inline-block p-4" href={link.url}>
+                  <Link className="inline-block p-4" href={link.url} prefetch={link.prefetch || true}>
                     {link.text}
                   </Link>
                 </li>
