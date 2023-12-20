@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { FaBars } from "react-icons/fa6"
 import { FaTimes } from "react-icons/fa"
-import { NAV_LINKS } from "@/consts"
+import { NAV_LINKS } from "@/data"
 import Button from "./Button"
 
 const MobileNav = () => {

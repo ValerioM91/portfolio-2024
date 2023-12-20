@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { PROJECTS } from "@/consts"
+import { PROJECTS } from "@/data"
 import Container from "./Container"
 import Title from "./Title"
 import Button from "./Button"

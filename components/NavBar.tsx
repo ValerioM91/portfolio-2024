@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import logo from "../images/logo-blue.png"
-import { NAV_LINKS } from "@/consts"
+import { NAV_LINKS } from "@/data"
 import Container from "./Container"
 import MobileNav from "./MobileNav"
 import ThemeWrapper from "./ThemeWrapper"

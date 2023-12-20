@@ -34,8 +34,7 @@ const buttonStyles = cva(
 
 const Button = ({ children, className, variant = "primary", ...rest }: ButtonProps) => {
   if (rest.as === "link") {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const { as, external, ...props } = rest
+    const { as: _, external, ...props } = rest
     return (
       <Link
         {...props}

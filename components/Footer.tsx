@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { FaAngleUp } from "react-icons/fa6"
-import { NETWORKS } from "@/consts"
+import { NETWORKS } from "@/data"
 import Container from "./Container"
 
 const Footer = () => {
