@@ -32,11 +32,12 @@ const MobileNav = () => {
         <nav>
           <ul className="mt-16 flex flex-col items-center justify-center text-4xl text-base-100">
             {NAV_LINKS.map(link => {
+              const Element = link.external ? "a" : Link
               return (
                 <li key={link.id}>
-                  <Link className="inline-block p-4" href={link.url} prefetch={link.prefetch || true}>
+                  <Element className="inline-block p-4" href={link.url}>
                     {link.text}
-                  </Link>
+                  </Element>
                 </li>
               )
             })}

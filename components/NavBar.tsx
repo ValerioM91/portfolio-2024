@@ -22,16 +22,14 @@ const NavBar = () => {
             <nav>
               <ul className="hidden sm:flex">
                 {NAV_LINKS.map(link => {
-                  const { id, text, url } = link
+                  const { id, text, url, external } = link
+                  const Element = external ? "a" : Link
+
                   return (
                     <li key={id}>
-                      <Link
-                        className="inline-block p-2 text-center text-xl text-primary md:min-w-[7rem]"
-                        href={url}
-                        prefetch={link.prefetch || true}
-                      >
+                      <Element className="inline-block p-2 text-center text-xl text-primary md:min-w-[7rem]" href={url}>
                         {text}
-                      </Link>
+                      </Element>
                     </li>
                   )
                 })}

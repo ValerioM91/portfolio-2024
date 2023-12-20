@@ -10,7 +10,7 @@ export const NAV_LINKS = [
     id: 1,
     name: "file",
     text: "Resume",
-    prefetch: false,
+    external: true,
     url: "./Valerio-Mattera-CV.pdf",
   },
   {
