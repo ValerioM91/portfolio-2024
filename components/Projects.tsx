@@ -63,7 +63,7 @@ const SingleProject = ({ project }: { project: (typeof PROJECTS)[number] }) => {
         </div>
       </div>
 
-      <Link href={url} className="md:col-span-3">
+      <Link href={url} className="md:col-span-3" aria-label="Navigate to live project">
         <Image
           src={img}
           alt={title}

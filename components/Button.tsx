@@ -17,12 +17,12 @@ const buttonStyles = cva(
       variant: {
         primary: "bg-primary text-white hover:bg-primary/90 focus-visible:outline-primary active:primary/90",
         outline:
-          "border-2 border-primary text-primary bg-transparent hover:bg-primary/90 focus-visible:outline-white hover:text-base-100 active:bg-primary",
+          "border-2 border-primary text-primary bg-transparent hover:bg-primary/90 focus-visible:outline-white hover:text-white active:bg-primary",
         "outline-white":
-          "border-white border-2 text-white hover:bg-primary/90 focus-visible:outline-white hover:text-base-100 active:bg-primary",
+          "border-white border-2 text-white hover:bg-white focus-visible:outline-white hover:text-primary",
         white: "border border-gray-400 bg-white hover:bg-gray-100 focus-visible:outline-white active:bg-white",
         ghost:
-          "bg-transparent text-primary hover:bg-primary/90 hover:text-base-100 focus-visible:outline-primary active:primary/90",
+          "bg-transparent text-primary hover:bg-primary hover:text-white focus-visible:outline-primary active:primary/90",
         disabled: "bg-neutral-300 text-neutral-500 border-neutral-300",
       },
     },

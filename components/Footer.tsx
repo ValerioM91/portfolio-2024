@@ -7,11 +7,11 @@ const Footer = () => {
   return (
     <footer className="bg-[#333] py-6 text-white md:py-12">
       <Container className="flex flex-col items-center justify-center gap-3">
-        <Link href="#hero" className="text-2xl" aria-label="Navigate to the top">
+        <Link href="#hero" className="p-2 text-2xl" aria-label="Navigate to the top">
           <FaAngleUp />
         </Link>
 
-        <div className="mt-2 grid grid-cols-3 items-center gap-4 text-lg md:text-xl">
+        <div className="grid grid-cols-3 items-center gap-4 text-lg md:text-xl">
           {NETWORKS.map(network => {
             const { icon: Icon, url, text } = network
             return (

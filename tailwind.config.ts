@@ -13,7 +13,7 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "gradient-pattern": "linear-gradient(135deg,#6973be,#4255d4)",
+        "gradient-linear": "linear-gradient(135deg,#6973be,#4255d4)",
       },
       keyframes: {
         pop: {
@@ -38,7 +38,6 @@ const config: Config = {
         light: {
           ...require("daisyui/src/theming/themes")["light"],
           primary: "#646FC4",
-          secondary: "#4255d4",
           "base-content": "#272341",
           "base-200": "#fff",
         },
@@ -47,7 +46,6 @@ const config: Config = {
         dark: {
           ...require("daisyui/src/theming/themes")["dark"],
           primary: "#747BB4",
-          secondary: "#009cde",
           accent: "#84235d",
           "base-content": "#eeeeee",
           "base-200": "#121212",

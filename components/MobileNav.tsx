@@ -20,7 +20,7 @@ const MobileNav = () => {
         <FaBars />
       </Button>
       <div
-        className={`fixed inset-0 bg-opacity-90 bg-gradient-pattern transition-transform duration-300 ${
+        className={`bg-gradient-linear fixed inset-0 bg-opacity-90 transition-transform duration-300 ${
           showNav ? "translate-x-0" : "translate-x-full"
         }`}
       >
