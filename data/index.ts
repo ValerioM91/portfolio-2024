@@ -65,7 +65,7 @@ export const PROJECTS = [
   {
     img: books,
     title: `Martina's Books`,
-    info: [`Gatbsy.js`, `Contentful CMS`, `GraphQL`, ` Dynamically generated Pages`],
+    info: [`Gatbsy.js`, `Contentful CMS`, `GraphQL`],
     info2: "",
     url: "https://blog-with-gatsby.netlify.app/",
     repo: "https://github.com/ValerioM91/blog-gatsby",
