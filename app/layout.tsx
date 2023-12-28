@@ -10,8 +10,19 @@ const chakraPetch = Chakra_Petch({
 })
 
 export const metadata: Metadata = {
-  title: "Valerio Mattera",
-  description: "Valerio Mattera's website",
+  metadataBase: new URL("https://valeriomattera.com"),
+  title: "Valerio Mattera | Senior Frontend Engineer",
+  description: "Valerio Mattera - Portfolio website",
+  openGraph: {
+    images: [
+      {
+        url: "og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Valerio Mattera",
+      },
+    ],
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
