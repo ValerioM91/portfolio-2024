@@ -20,7 +20,7 @@ const MobileNav = () => {
         <FaBars />
       </Button>
       <div
-        className={`bg-gradient-linear fixed inset-0 bg-opacity-90 transition-transform duration-300 ${
+        className={`fixed inset-0 bg-opacity-90 bg-gradient-linear transition-transform duration-300 ${
           showNav ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -30,7 +30,7 @@ const MobileNav = () => {
           </Button>
         </div>
         <nav>
-          <ul className="mt-16 flex flex-col items-center justify-center text-4xl text-base-100">
+          <ul className="mt-16 flex flex-col items-center justify-center text-4xl text-white">
             {NAV_LINKS.map(link => {
               const Element = link.external ? "a" : Link
               return (
