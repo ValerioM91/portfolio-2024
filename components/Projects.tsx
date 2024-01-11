@@ -25,7 +25,7 @@ const Projects = () => {
 export default Projects
 
 const SingleProject = ({ project }: { project: (typeof PROJECTS)[number] }) => {
-  const { title, info, url, repo, img, backend, frontend } = project
+  const { title, info, url, repo, img, backend, frontend, urlLabel } = project
 
   return (
     <div className="mx-auto mb-8 grid gap-4 border-b pb-8 md:mb-16 md:grid-cols-5 md:flex-row md:border-none md:pb-0">
@@ -42,7 +42,7 @@ const SingleProject = ({ project }: { project: (typeof PROJECTS)[number] }) => {
         <div className="flex flex-wrap gap-2">
           {url && (
             <Button as="link" external href={url} variant="outline">
-              See Live
+              {urlLabel || "See Live"}
             </Button>
           )}
           {repo && (
