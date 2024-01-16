@@ -56,7 +56,7 @@ export const PROJECTS = [
   },
   {
     img: quizzy,
-    title: `Quizzy`,
+    title: `Quizzy (wip)`,
     info: [`PWA`, `Tanstack Router`, `Tailwind CSS`],
     urlLabel: "Play",
     url: "https://quiz-pwa.vercel.app",
