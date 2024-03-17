@@ -10,7 +10,7 @@ const About = () => {
       <div className="flex flex-col items-center gap-6 bg-gradient-linear px-4 pb-20 pt-12">
         <Container className="items-center gap-20 space-y-10 lg:flex">
           <div className="mx-auto flex max-w-prose flex-col gap-4 text-center text-lg text-white md:text-left lg:text-xl">
-            <Title title="About me" className="mb-8 text-left text-white" />
+            <Title title="About me" className="mb-8 text-white lg:text-left" />
             <p>
               I&apos;m an experienced engineer with a focus on Frontend development. My areas of expertise include
               TypeScript, React, React Native, and frameworks like Next.js and Remix. Additionally, I have experience in

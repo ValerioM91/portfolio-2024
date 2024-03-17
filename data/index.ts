@@ -1,10 +1,12 @@
 import vplayer1 from "../images/v-player1.jpg"
 import activityFinder from "../images/activity-finder.jpg"
 import shootemup from "../images/shootemup.jpg"
+import portfolio from "../images/portfolio.jpg"
 import books from "../images/books-blog.jpg"
 import jesandjoe from "../images/jesandjoe.jpg"
 import quizzy from "../images/quizzy.jpg"
 import { FaFile, FaGithub, FaLinkedin } from "react-icons/fa6"
+import { type StaticImageData } from "next/image"
 
 export const NAV_LINKS: {
   id: number
@@ -40,7 +42,16 @@ export const NAV_LINKS: {
   },
 ]
 
-export const PROJECTS = [
+export const PROJECTS: {
+  img: StaticImageData
+  title: string
+  info: string[]
+  url?: string
+  urlLabel?: string
+  repo?: string
+  backend?: string
+  frontend?: string
+}[] = [
   {
     img: activityFinder,
     title: `Activity Finder`,
@@ -62,6 +73,13 @@ export const PROJECTS = [
     url: "https://v-player1-frontend.vercel.app/",
     backend: "https://github.com/ValerioM91/v-player1-backend",
     frontend: "https://github.com/ValerioM91/v-player1-frontend",
+  },
+  {
+    img: portfolio,
+    title: `Portfolio site`,
+    info: [`Next.js`, `Tailwind CSS`, `TypeScript`],
+    url: "https://github.com/ValerioM91/portfolio-2024",
+    urlLabel: "Source Code",
   },
   {
     img: quizzy,
