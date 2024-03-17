@@ -10,7 +10,7 @@ const ExperienceCard = ({ className, title, content, skills, ...rest }: Experien
         <h3 className="text-xl font-bold">{title}</h3>
         <p>{content}</p>
       </div>
-      <div className="bg-secondary/80 p-5 dark:bg-secondary">
+      <div className="bg-primary p-5 dark:bg-secondary">
         <h4 className="mb-2 text-lg font-bold text-white">Experience in role:</h4>
         <div className="flex flex-wrap gap-2">
           {skills.map(skill => (

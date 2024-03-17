@@ -78,13 +78,13 @@ function AnimatedLogo({ className, ...rest }: AnimatedLogoProps) {
       <motion.svg
         width="200"
         height="108"
-        viewBox="0 0 488 262"
+        viewBox="0 0 498 262"
         initial="initial"
         animate="animate"
         className="h-full w-auto"
       >
         <g fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
-          <g transform="translate(-56 -281)">
+          <g transform="translate(-53 -281)">
             <g transform="rotate(-90 298.446 242.428)">
               <motion.path
                 fill="#F3C400"

@@ -55,11 +55,10 @@ const SingleProject = ({ project }: { project: (typeof PROJECTS)[number] }) => {
       </div>
 
       <Link
-        href={url}
-        className="group md:col-span-3"
+        href={url ?? "/"}
+        className="group px-0 py-0 hover:bg-transparent md:col-span-3"
         aria-label="Navigate to live project"
         variant="ghost"
-        colorSchema="white"
       >
         <Image
           src={img}

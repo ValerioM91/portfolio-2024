@@ -1,29 +1,32 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 
 export type Theme = "light" | "dark"
 
 const ThemeToggle = ({ initialValue }: { initialValue?: Theme }) => {
   const [theme, setTheme] = useState<Theme>(initialValue || "light")
+  const setThemeHelpers = useCallback((theme: Theme) => {
+    document.cookie = "vm91-theme=" + theme
+    document.body.classList.remove("light", "dark")
+    document.body.classList.add(theme)
+    document.documentElement.setAttribute("data-theme", theme)
+    setTheme(theme)
+  }, [])
 
   useEffect(() => {
     if (typeof window !== undefined && !initialValue) {
       const isDarkPreferred = window.matchMedia("(prefers-color-scheme: dark)").matches === true
 
       if (isDarkPreferred) {
-        document.cookie = "vm91-theme=dark"
-        document.documentElement.setAttribute("data-theme", "dark")
-        setTheme("dark")
+        setThemeHelpers("dark")
       }
     }
-  }, [initialValue])
+  }, [initialValue, setThemeHelpers])
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light"
-    document.cookie = "vm91-theme=" + newTheme
-    document.documentElement.setAttribute("data-theme", newTheme)
-    setTheme(newTheme)
+    setThemeHelpers(newTheme)
   }
 
   if (!theme) return null
