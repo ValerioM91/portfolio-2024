@@ -27,8 +27,8 @@ html {
     [class*="animate-fade"] {
       opacity: 0;
       animation-timeline: view();
-      animation-range-start: 10%;
-      animation-range-end: 40%;
+      animation-range-start: 1rem;
+      animation-range-end: 35%;
       animation-fill-mode: forwards;
     }
   }
