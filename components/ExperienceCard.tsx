@@ -1,5 +1,6 @@
 import { type INDUSTRY_EXPERIENCE } from "@/data"
 import { cn } from "@/utils/cn"
+import Badge from "./Badge"
 
 type ExperienceCard = React.ComponentPropsWithoutRef<"div"> & (typeof INDUSTRY_EXPERIENCE)[number]
 
@@ -12,13 +13,11 @@ const ExperienceCard = ({ className, title, content, skills, ...rest }: Experien
       </div>
       <div className="bg-primary p-5 dark:bg-secondary">
         <h4 className="mb-2 text-lg font-bold text-white">Experience in role:</h4>
-        <div className="flex flex-wrap gap-2">
+        <ul className="flex list-none flex-wrap gap-2">
           {skills.map(skill => (
-            <div key={skill} className="rounded bg-white px-2 py-1 text-sm font-bold text-primary">
-              {skill}
-            </div>
+            <Badge key={skill} skill={skill} />
           ))}
-        </div>
+        </ul>
       </div>
     </div>
   )

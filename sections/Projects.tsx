@@ -6,7 +6,7 @@ import Link from "../components/Link"
 const Projects = () => {
   return (
     <section id="projects" className="bg-base-200">
-      <div className="container max-w-6xl py-10">
+      <div className="container max-w-6xl py-10 lg:pb-32 lg:pt-20">
         <Title title="Projects" className="mb-6 md:mb-12" />
 
         {PROJECTS.map(project => (

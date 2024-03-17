@@ -5,6 +5,7 @@ import Hero from "@/sections/Hero"
 import IndustryExperience from "@/sections/IndustryExperience"
 import Projects from "@/sections/Projects"
 import NavBar from "@/components/NavBar"
+import Skills from "@/sections/Skills"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <About />
         <IndustryExperience />
+        <Skills />
         <Projects />
         <Contact />
       </main>

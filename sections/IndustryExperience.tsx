@@ -4,7 +4,7 @@ import Title from "../components/Title"
 
 const IndustryExperience = () => {
   return (
-    <div className="container py-12">
+    <div className="container py-10 lg:pb-32 lg:pt-20">
       <Title title="Industry Experience" className="mb-8" />
       <div className="grid gap-8 md:grid-cols-2">
         {INDUSTRY_EXPERIENCE.map(experience => (
