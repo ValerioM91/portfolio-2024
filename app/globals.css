@@ -21,3 +21,15 @@ html {
   min-height: 100vh;
   min-height: 100svh;
 }
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    [class*="animate-fade"] {
+      opacity: 0;
+      animation-timeline: view();
+      animation-range-start: 10%;
+      animation-range-end: 40%;
+      animation-fill-mode: forwards;
+    }
+  }
+}

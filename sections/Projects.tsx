@@ -22,7 +22,7 @@ const SingleProject = ({ project }: { project: (typeof PROJECTS)[number] }) => {
   const { title, info, url, repo, img, backend, frontend, urlLabel } = project
 
   return (
-    <div className="mx-auto mb-8 grid gap-4 border-b pb-8 md:mb-16 md:grid-cols-5 md:flex-row md:border-none md:pb-0">
+    <div className="mx-auto mb-8 grid animate-fade-up gap-4 border-b pb-8 md:mb-16 md:grid-cols-5 md:flex-row md:border-none md:pb-0">
       <div className="flex flex-col items-center gap-3 md:col-span-2 md:items-start">
         <h3 className="text-2xl font-bold">{title}</h3>
         <ul className="list-disc px-4">

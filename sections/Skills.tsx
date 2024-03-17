@@ -3,7 +3,7 @@ import Title from "@/components/Title"
 
 const Skills = () => {
   return (
-    <div className="bg-gradient-linear py-10 text-white dark:bg-base-100 lg:pb-32 lg:pt-20">
+    <div className="animate-fade bg-gradient-linear py-10 text-white dark:bg-base-100 lg:pb-32 lg:pt-20">
       <div className="container">
         <Title title="Technical Skills" />
 

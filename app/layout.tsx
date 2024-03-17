@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" data-theme={themeValue} className="scroll-smooth">
       <body
         suppressHydrationWarning
-        className={`${chakraPetch.className} ${chakraPetch.variable} ${themeValue} relative animate-[fade-in_1s] font-chakraPetch text-base-content antialiased`}
+        className={`${chakraPetch.className} ${chakraPetch.variable} ${themeValue} relative animate-[fade_1s] font-chakraPetch text-base-content antialiased`}
       >
         {children}
       </body>

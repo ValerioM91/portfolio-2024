@@ -42,17 +42,13 @@ const config: Config = {
           "1%": { transform: "scale(0.5)", opacity: "1" },
           "100%": { transform: "scale(1)", opacity: "1" },
         },
-        "fade-in": {
-          "0%": { opacity: "1%" },
-          "100%": { opacity: "100%" },
-        },
       },
       fontFamily: {
         chakraPetch: ["var(--chakraPetch)", ...fontFamily.sans],
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("tailwindcss-animated")],
   daisyui: {
     themes: [
       {

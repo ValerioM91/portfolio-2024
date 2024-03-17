@@ -6,7 +6,7 @@ import AnimatedLogo from "./AnimatedLogo"
 
 const NavBar = () => {
   return (
-    <div className="absolute w-full">
+    <div className="absolute z-10 w-full">
       <div className="container">
         <div className="flex h-20 items-center justify-between">
           <AnimatedLogo className="h-12 w-auto" />

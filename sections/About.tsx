@@ -5,7 +5,7 @@ import valerioImage from "../images/VALERIO.jpg"
 
 const About = () => {
   return (
-    <section id="about" className="bg-base-200">
+    <section id="about" className="animate-fade bg-base-200">
       <div className="flex flex-col items-center gap-6 bg-gradient-linear px-4 pb-20 pt-12">
         <div className="container items-center gap-20 space-y-10 lg:flex">
           <div className="mx-auto flex max-w-prose flex-col gap-4 text-center text-lg text-white md:text-left lg:text-xl">
