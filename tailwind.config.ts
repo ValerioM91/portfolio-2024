@@ -12,6 +12,17 @@ const config: Config = {
     "./data/index.ts",
   ],
   theme: {
+    container: {
+      center: true,
+      screens: {
+        sm: "100%",
+        md: "100%",
+        lg: "1280px",
+        xl: "1280px",
+        "2xl": "1280px",
+      },
+      padding: "1rem",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

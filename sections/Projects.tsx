@@ -1,19 +1,18 @@
 import Image from "next/image"
 import { PROJECTS } from "@/data"
-import Container from "../components/Container"
 import Title from "../components/Title"
 import Link from "../components/Link"
 
 const Projects = () => {
   return (
     <section id="projects" className="bg-base-200">
-      <Container className="max-w-6xl py-10">
+      <div className="container max-w-6xl py-10">
         <Title title="Projects" className="mb-6 md:mb-12" />
 
         {PROJECTS.map(project => (
           <SingleProject project={project} key={project.title} />
         ))}
-      </Container>
+      </div>
     </section>
   )
 }

@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { NAV_LINKS } from "@/data"
-import Container from "./Container"
 import MobileNav from "../sections/MobileNav"
 import ThemeWrapper from "./ThemeWrapper"
 import AnimatedLogo from "./AnimatedLogo"
@@ -8,7 +7,7 @@ import AnimatedLogo from "./AnimatedLogo"
 const NavBar = () => {
   return (
     <div className="absolute w-full">
-      <Container>
+      <div className="container">
         <div className="flex h-20 items-center justify-between">
           <AnimatedLogo className="h-12 w-auto" />
 
@@ -34,7 +33,7 @@ const NavBar = () => {
             </nav>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   )
 }

@@ -1,13 +1,12 @@
 import Link from "next/link"
 import { FaAngleUp } from "react-icons/fa6"
 import { NETWORKS } from "@/data"
-import Container from "../components/Container"
 import { NextJSLogo, ReactLogo, TailwindLogo } from "@/components/Logos"
 
 const Footer = () => {
   return (
     <footer className="bg-[#333] py-6 text-white md:py-12">
-      <Container className="flex flex-col items-center justify-center gap-3">
+      <div className="container flex flex-col items-center justify-center gap-3">
         <Link href="#hero" className="p-2 text-2xl" aria-label="Navigate to the top">
           <FaAngleUp />
         </Link>
@@ -50,7 +49,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </footer>
   )
 }
