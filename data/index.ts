@@ -160,10 +160,4 @@ export const INDUSTRY_EXPERIENCE: {
       "As Front End Engineer, I led the delivery of the first direct-to-consumer e-commerce platform for Glenmorangie, generating over 100k during the first three months.",
     skills: ["React", "Shopify", "Shogun Frontend CMS", "Storybook", "Chakra UI", "Next.js", "Google Analytics"],
   },
-  {
-    title: "International business and world affairs information",
-    content:
-      "As Full Stack Engineer, I developed new Microsoft Teams and Slack applications for one of the world's preeminent journals to allow users to easily save and share articles within their workspace.",
-    skills: ["Node.js", "Express.js", "TypeScript", "Prisma", "MySQL", "React", "Jest", "React Testing Library"],
-  },
 ]
