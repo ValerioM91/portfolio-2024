@@ -5,7 +5,8 @@ import Link from "next/link"
 import { FaBars } from "react-icons/fa6"
 import { FaTimes } from "react-icons/fa"
 import { NAV_LINKS } from "@/data"
-import Button from "./Button"
+import Button from "../components/Button"
+import { cn } from "@/utils/cn"
 
 const MobileNav = () => {
   const [showNav, setShowNav] = useState(false)
@@ -25,7 +26,12 @@ const MobileNav = () => {
         }`}
       >
         <div className="flex justify-end p-4">
-          <Button variant="outline-white" onClick={() => setShowNav(false)} aria-label="Close mobile menu">
+          <Button
+            variant="outline"
+            colorSchema="white"
+            onClick={() => setShowNav(false)}
+            aria-label="Close mobile menu"
+          >
             <FaTimes />
           </Button>
         </div>
@@ -34,7 +40,13 @@ const MobileNav = () => {
             {NAV_LINKS.map(link => {
               const Element = link.external ? "a" : Link
               return (
-                <li key={link.id}>
+                <li
+                  key={link.id}
+                  className={cn("transition-all duration-500", {
+                    [`opacity-1 translate-y-0 ${link.delay}`]: showNav,
+                    "translate-y-5 opacity-0": !showNav,
+                  })}
+                >
                   <Element className="inline-block p-4" href={link.url}>
                     {link.text}
                   </Element>

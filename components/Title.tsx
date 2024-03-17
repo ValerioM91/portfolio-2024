@@ -1,4 +1,4 @@
-import { twMerge } from "tailwind-merge"
+import { cn } from "@/utils/cn"
 
 type TitleProps = React.ComponentPropsWithoutRef<"h2"> & {
   title: string
@@ -6,7 +6,7 @@ type TitleProps = React.ComponentPropsWithoutRef<"h2"> & {
 
 const Title = ({ title, className, ...rest }: TitleProps) => {
   return (
-    <h2 className={twMerge("text-center text-3xl font-bold uppercase sm:text-4xl", className)} {...rest}>
+    <h2 className={cn("text-center text-3xl font-bold uppercase sm:text-4xl", className)} {...rest}>
       {title}
     </h2>
   )

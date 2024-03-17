@@ -3,7 +3,7 @@ import Image from "next/image"
 import logo from "../images/logo-blue.png"
 import { NAV_LINKS } from "@/data"
 import Container from "./Container"
-import MobileNav from "./MobileNav"
+import MobileNav from "../sections/MobileNav"
 import ThemeWrapper from "./ThemeWrapper"
 
 const NavBar = () => {

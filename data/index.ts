@@ -6,28 +6,37 @@ import jesandjoe from "../images/jesandjoe.jpg"
 import quizzy from "../images/quizzy.jpg"
 import { FaFile, FaGithub, FaLinkedin } from "react-icons/fa6"
 
-export const NAV_LINKS = [
+export const NAV_LINKS: {
+  id: number
+  text: string
+  url: string
+  delay: "delay-300" | "delay-400" | "delay-500" | "delay-600" | "delay-700"
+  external?: boolean
+}[] = [
   {
     id: 1,
-    name: "file",
     text: "Resume",
     external: true,
     url: "./Valerio-Mattera-CV.pdf",
+    delay: "delay-300",
   },
   {
     id: 2,
     text: "Projects",
     url: "#projects",
+    delay: "delay-400",
   },
   {
     id: 3,
     text: "GitHub",
     url: "https://github.com/ValerioM91",
+    delay: "delay-500",
   },
   {
     id: 4,
     text: "Contact",
     url: "#contact",
+    delay: "delay-600",
   },
 ]
 
@@ -101,5 +110,36 @@ export const NETWORKS = [
     icon: FaGithub,
     text: "GitHub",
     url: "https://github.com/ValerioM91",
+  },
+]
+
+export const INDUSTRY_EXPERIENCE: {
+  title: string
+  content: string
+  skills: string[]
+}[] = [
+  {
+    title: "Worcester Bosch Professional App",
+    content:
+      "As a Senior Front End Engineer, I re-engineer and modernised the Worcester Bosch Professional mobile app introducing modern technologies and best practices, reducing errors by 80%.",
+    skills: ["TypeScript", "React", "React Native", "Redux Toolkit", "RTK Query"],
+  },
+  {
+    title: "International business and world affairs information",
+    content:
+      "As Full Stack Engineer, I developed new Microsoft Teams and Slack applications for one of the world's preeminent journals to allow users to easily save and share articles within their workspace.",
+    skills: ["Node.js", "Express.js", "TypeScript", "Prisma", "MySQL", "React", "Jest"],
+  },
+  {
+    title: "Worcester Bosch",
+    content:
+      "As a Senior Front End Engineer, I successfully overhauled the legacy React codebase for Worcester Bosch FastTrack, resulting in a remarkable 98% increase in conversion rates, elevated completed orders, and a revenue boost of £600,000.",
+    skills: ["React", "Redux", "Storybook", "React Router", "PHP"],
+  },
+  {
+    title: "Glenmorangie",
+    content:
+      "As Front End Engineer, I led the delivery of the first direct-to-consumer e-commerce platform for Glenmorangie, generating over 100k during the first three months.",
+    skills: ["React", "Shopify", "Shogun Frontend CMS", "Storybook", "Google Analytics"],
   },
 ]

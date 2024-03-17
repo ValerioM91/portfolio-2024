@@ -1,9 +1,8 @@
 import Image from "next/image"
 import { PROJECTS } from "@/data"
-import Container from "./Container"
-import Title from "./Title"
-import Button from "./Button"
-import Link from "next/link"
+import Container from "../components/Container"
+import Title from "../components/Title"
+import Link from "../components/Link"
 
 const Projects = () => {
   return (
@@ -14,10 +13,6 @@ const Projects = () => {
         {PROJECTS.map(project => (
           <SingleProject project={project} key={project.title} />
         ))}
-
-        <p className="text-center md:text-lg">
-          Please note: <em>all the projects here free time projects. Contact me to chat about my professional ones.</em>
-        </p>
       </Container>
     </section>
   )
@@ -40,36 +35,38 @@ const SingleProject = ({ project }: { project: (typeof PROJECTS)[number] }) => {
         </ul>
 
         <div className="flex flex-wrap gap-2">
-          {url && (
-            <Button as="link" external href={url} variant="outline">
-              {urlLabel || "See Live"}
-            </Button>
-          )}
+          {url && <Link href={url}>{urlLabel || "See Live"}</Link>}
           {repo && (
-            <Button as="link" external href={repo} variant="ghost">
+            <Link href={repo} variant="ghost">
               Source Code
-            </Button>
+            </Link>
           )}
           {backend && (
-            <Button as="link" external href={backend} variant="ghost">
+            <Link href={backend} variant="ghost">
               Backend
-            </Button>
+            </Link>
           )}
           {frontend && (
-            <Button as="link" external href={frontend} variant="ghost">
+            <Link href={frontend} variant="ghost">
               Frontend
-            </Button>
+            </Link>
           )}
         </div>
       </div>
 
-      <Link href={url} className="md:col-span-3" aria-label="Navigate to live project">
+      <Link
+        href={url}
+        className="group md:col-span-3"
+        aria-label="Navigate to live project"
+        variant="ghost"
+        colorSchema="white"
+      >
         <Image
           src={img}
           alt={title}
           width={700}
           height={400}
-          className="max-h-96 w-full self-center object-cover object-top shadow-lg"
+          className="max-h-96 w-full self-center object-cover object-top shadow-lg transition-all group-hover:scale-[0.99]"
         />
       </Link>
     </div>

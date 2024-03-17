@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { FaAngleUp } from "react-icons/fa6"
 import { NETWORKS } from "@/data"
-import Container from "./Container"
+import Container from "../components/Container"
 
 const Footer = () => {
   return (
@@ -30,7 +30,7 @@ const Footer = () => {
           })}
         </div>
         <hr />
-        <p className="footer__text">© {new Date().getFullYear()} - Valerio Mattera</p>
+        <p>© {new Date().getFullYear()} - Valerio Mattera</p>
       </Container>
     </footer>
   )

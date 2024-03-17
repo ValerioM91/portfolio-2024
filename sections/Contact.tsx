@@ -1,6 +1,6 @@
-import Button from "./Button"
-import Container from "./Container"
-import Title from "./Title"
+import Container from "../components/Container"
+import Link from "../components/Link"
+import Title from "../components/Title"
 
 const Contact = () => {
   return (
@@ -9,9 +9,9 @@ const Contact = () => {
         <Container className="flex flex-col items-center justify-center gap-6 ">
           <Title title="Let's Chat" className="text-white" />
 
-          <Button as="link" variant="outline-white" href="mailto:info@valeriomattera.com" className="mx-auto text-2xl">
+          <Link colorSchema="white" variant="solid" href="mailto:info@valeriomattera.com" className="mx-auto text-2xl">
             info@valeriomattera.com
-          </Button>
+          </Link>
         </Container>
       </div>
     </section>

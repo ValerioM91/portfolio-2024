@@ -1,5 +1,5 @@
-import Container from "./Container"
-import Button from "./Button"
+import Container from "../components/Container"
+import Link from "../components/Link"
 
 const Hero = () => {
   return (
@@ -15,9 +15,7 @@ const Hero = () => {
           <br />a Senior Frontend engineer
         </h1>
 
-        <Button variant="outline" as="link" href="#about">
-          Know more
-        </Button>
+        <Link href="#about">Know more</Link>
       </Container>
     </section>
   )

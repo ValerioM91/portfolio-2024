@@ -6,7 +6,10 @@ const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./utils/**/*.{js,ts,jsx,tsx,mdx}",
+    "./data/index.ts",
   ],
   theme: {
     extend: {
@@ -14,6 +17,13 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "gradient-linear": "linear-gradient(135deg,#6973be,#4255d4)",
+      },
+      transitionDelay: {
+        400: "400ms",
+        600: "600ms",
+        700: "700ms",
+        800: "800ms",
+        900: "900ms",
       },
       keyframes: {
         pop: {
@@ -38,6 +48,7 @@ const config: Config = {
         light: {
           ...require("daisyui/src/theming/themes")["light"],
           primary: "#646FC4",
+          secondary: "#4255d4",
           "base-content": "#272341",
           "base-200": "#fff",
         },
@@ -46,6 +57,7 @@ const config: Config = {
         dark: {
           ...require("daisyui/src/theming/themes")["dark"],
           primary: "#747BB4",
+          secondary: "#4255d4",
           accent: "#84235d",
           "base-content": "#eeeeee",
           "base-200": "#121212",
