@@ -2,6 +2,7 @@ import Link from "next/link"
 import { FaAngleUp } from "react-icons/fa6"
 import { NETWORKS } from "@/data"
 import Container from "../components/Container"
+import { NextJSLogo, ReactLogo, TailwindLogo } from "@/components/Logos"
 
 const Footer = () => {
   return (
@@ -30,7 +31,25 @@ const Footer = () => {
           })}
         </div>
         <hr />
-        <p>© {new Date().getFullYear()} - Valerio Mattera</p>
+
+        <div className="flex w-full flex-wrap items-center justify-center gap-4 md:mt-6 md:justify-between">
+          <p>© {new Date().getFullYear()} - Valerio Mattera</p>
+
+          <div className="flex flex-wrap items-center justify-center gap-6">
+            <p>This site is crafted with:</p>
+            <div className="flex flex-wrap items-center justify-center gap-4 pb-1">
+              <Link href="https://nextjs.org/" aria-label="Navigate to Next.js">
+                <NextJSLogo className="h-4 fill-white" />
+              </Link>
+              <Link href="https://reactjs.org/" aria-label="Navigate to React.js">
+                <ReactLogo className="h-6" />
+              </Link>
+              <Link href="https://tailwindcss.com/" aria-label="Navigate to Tailwind CSS">
+                <TailwindLogo className="h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
       </Container>
     </footer>
   )
