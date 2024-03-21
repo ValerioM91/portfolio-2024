@@ -137,25 +137,25 @@ export const INDUSTRY_EXPERIENCE: {
   skills: string[]
 }[] = [
   {
-    title: "Worcester Bosch Professional App",
+    title: "Heating Industry",
     content:
-      "As a Senior Front End Engineer, I re-engineer and modernised the Worcester Bosch Professional mobile app introducing modern technologies and best practices, reducing errors by 80%.",
+      "As Senior Front End Engineer, I re-engineer and modernised the Worcester Bosch Professional mobile app introducing modern technologies and best practices, reducing errors by 80%.",
     skills: ["TypeScript", "React", "React Native", "Redux Toolkit", "RTK Query"],
   },
   {
-    title: "Worcester Bosch",
+    title: "Heating Industry",
     content:
-      "As a Senior Front End Engineer, I successfully overhauled the legacy React codebase for Worcester Bosch FastTrack, resulting in a remarkable 98% increase in conversion rates, elevated completed orders, and a revenue boost of £600,000.",
+      "As Senior Front End Engineer, I successfully overhauled the legacy React codebase for Worcester Bosch FastTrack, resulting in a remarkable 98% increase in conversion rates, elevated completed orders, and a revenue boost of £600,000.",
     skills: ["React", "Redux", "Storybook", "React Router", "PHP"],
   },
   {
     title: "International business and world affairs information",
     content:
-      "As Full Stack Engineer, I developed new Microsoft Teams and Slack applications for one of the world's preeminent journals to allow users to easily save and share articles within their workspace.",
+      "As Full Stack Engineer, I developed new Microsoft Teams and Slack applications for one of the world's preeminent journals to allow users to save and share articles within their workspace.",
     skills: ["Node.js", "Express.js", "TypeScript", "Prisma", "MySQL", "React", "Jest", "React Testing Library"],
   },
   {
-    title: "Glenmorangie",
+    title: "E-Commerce and retail",
     content:
       "As Front End Engineer, I led the delivery of the first direct-to-consumer e-commerce platform for Glenmorangie, generating over 100k during the first three months.",
     skills: ["React", "Shopify", "Shogun Frontend CMS", "Storybook", "Chakra UI", "Next.js", "Google Analytics"],
