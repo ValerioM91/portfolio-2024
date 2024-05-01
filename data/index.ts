@@ -1,5 +1,5 @@
 import vplayer1 from "../images/v-player1.jpg"
-import activityFinder from "../images/activity-finder.jpg"
+// import activityFinder from "../images/activity-finder.jpg"
 import shootemup from "../images/shootemup.jpg"
 import portfolio from "../images/portfolio.jpg"
 import books from "../images/books-blog.jpg"
@@ -52,13 +52,13 @@ export const PROJECTS: {
   backend?: string
   frontend?: string
 }[] = [
-  {
-    img: activityFinder,
-    title: `Activity Finder`,
-    info: [`Next.js Full Stack app (App Router)`, `Server actions`, `Tailwind CSS`, `Prisma ORM`, `OpenAI API`],
-    url: "https://activity-finder-valeriom91.vercel.app/",
-    repo: "https://github.com/ValerioM91/activity-finder",
-  },
+  // {
+  //   img: activityFinder,
+  //   title: `Activity Finder`,
+  //   info: [`Next.js Full Stack app (App Router)`, `Server actions`, `Tailwind CSS`, `Prisma ORM`, `OpenAI API`],
+  //   url: "https://activity-finder-valeriom91.vercel.app/",
+  //   repo: "https://github.com/ValerioM91/activity-finder",
+  // },
   {
     img: vplayer1,
     title: `V-Player 1`,
