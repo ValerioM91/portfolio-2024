@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { cookies } from "next/headers"
 import { Chakra_Petch } from "next/font/google"
 import "./globals.css"
+import { Analytics } from "@vercel/analytics/react"
 
 const chakraPetch = Chakra_Petch({
   variable: "--chakraPetch",
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className={`${chakraPetch.className} ${chakraPetch.variable} ${themeValue} relative animate-[fade_1s] font-chakraPetch text-base-content antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   )
