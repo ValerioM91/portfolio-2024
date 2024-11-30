@@ -60,6 +60,23 @@ export const PROJECTS: {
   //   repo: "https://github.com/ValerioM91/activity-finder",
   // },
   {
+    img: quizzy,
+    title: `Quizzy (wip)`,
+    info: [
+      `Monorepo with TurboRepo`,
+      `Nest JS (Back-end)`,
+      `Prisma ORM w. PostgreSQL`,
+      `React & Tanstack Router (2 Front-ends)`,
+      `TypeScript`,
+      `OpenAI for generating questions`,
+      `AWS ECS & RDS for deployment`,
+      `Tailwind CSS`,
+    ],
+    urlLabel: "Play",
+    url: "https://quizzy.valeriomattera.co.uk",
+    repo: "https://github.com/ValerioM91/quizzy-monorepo",
+  },
+  {
     img: vplayer1,
     title: `V-Player 1`,
     info: [
@@ -80,14 +97,6 @@ export const PROJECTS: {
     info: [`Next.js`, `Tailwind CSS`, `TypeScript`],
     url: "https://github.com/ValerioM91/portfolio-2024",
     urlLabel: "Source Code",
-  },
-  {
-    img: quizzy,
-    title: `Quizzy (wip)`,
-    info: [`PWA`, `Tanstack Router`, `Tailwind CSS`],
-    urlLabel: "Play",
-    url: "https://quiz-pwa.vercel.app",
-    repo: "https://github.com/ValerioM91/quiz-pwa",
   },
   {
     img: jesandjoe,

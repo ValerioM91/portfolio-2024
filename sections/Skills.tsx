@@ -11,7 +11,19 @@ const Skills = () => {
           <SkillList title="Core" skills={["TypeScript", "JavaScript", "HTML", "CSS", "PHP"]} />
           <SkillList
             title="Backend"
-            skills={["Node.js", "Express", "tRPC", "Prisma", "MySQL", "MongoDB", "REST API", "WordPress"]}
+            skills={[
+              "Node.js",
+              "Express",
+              "AWS Lambda",
+              "NestJS",
+              "tRPC",
+              "Prisma",
+              "PostgreSQL",
+              "MySQL",
+              "MongoDB",
+              "REST API",
+              "WordPress",
+            ]}
           />
           <SkillList
             title="Frontend"
@@ -19,11 +31,12 @@ const Skills = () => {
               "React",
               "Next.js",
               "React Native",
+              "Tailwindcss",
               "Redux",
               "Redux Toolkit",
               "RTK Query",
+              "Apollo GraphQL",
               "Tanstack Query (React Query)",
-              "Tailwind CSS",
               "Chakra UI",
               "Styled Components",
               "Emotion",
@@ -37,6 +50,7 @@ const Skills = () => {
             title="Miscellaneous"
             skills={[
               "Source Control (Git)",
+              "AWS S3",
               "Jest",
               "ESLint",
               "Husky",
@@ -47,8 +61,6 @@ const Skills = () => {
               "Mixpanel",
               "Docker",
               "Cypress",
-              "NextAuth.js",
-              "OAuth",
             ]}
           />
         </div>
