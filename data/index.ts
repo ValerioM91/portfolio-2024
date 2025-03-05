@@ -146,6 +146,28 @@ export const INDUSTRY_EXPERIENCE: {
   skills: string[]
 }[] = [
   {
+    title: "Biotech Industry",
+    content:
+      "As Full Stack Engineer, I contributed to both backend and frontend development for Abcam. On the backend, I worked with GraphQL and serverless architecture. On the frontend, I implemented features and improved the user interface using React and Next.js.",
+    skills: [
+      "TypeScript",
+      "Node.js",
+      "GraphQL",
+      "Serverless",
+      "Mongodb",
+      "Next.js",
+      "React",
+      "Jest",
+      "React Testing Library",
+    ],
+  },
+  {
+    title: "International business and world affairs information",
+    content:
+      "As Full Stack Engineer, I developed new Microsoft Teams and Slack applications for one of the world's preeminent journals to allow users to save and share articles within their workspace.",
+    skills: ["Node.js", "Express.js", "TypeScript", "Prisma", "MySQL", "React", "Jest", "React Testing Library"],
+  },
+  {
     title: "Heating Industry",
     content:
       "As Senior Front End Engineer, I re-engineer and modernised the Worcester Bosch Professional mobile app introducing modern technologies and best practices, reducing errors by 80%.",
@@ -156,12 +178,6 @@ export const INDUSTRY_EXPERIENCE: {
     content:
       "As Senior Front End Engineer, I successfully overhauled the legacy React codebase for Worcester Bosch FastTrack, resulting in a remarkable 98% increase in conversion rates, elevated completed orders, and a revenue boost of £600,000.",
     skills: ["React", "Redux", "Storybook", "React Router", "PHP"],
-  },
-  {
-    title: "International business and world affairs information",
-    content:
-      "As Full Stack Engineer, I developed new Microsoft Teams and Slack applications for one of the world's preeminent journals to allow users to save and share articles within their workspace.",
-    skills: ["Node.js", "Express.js", "TypeScript", "Prisma", "MySQL", "React", "Jest", "React Testing Library"],
   },
   {
     title: "E-Commerce and retail",

@@ -11,7 +11,7 @@ const Hero = () => {
             Valerio Mattera
           </span>
           ,
-          <br />a Senior Frontend engineer
+          <br />a Full Stack engineer
         </h1>
 
         <Link href="#about">Know more</Link>
