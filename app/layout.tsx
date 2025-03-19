@@ -12,7 +12,7 @@ const chakraPetch = Chakra_Petch({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://valeriomattera.com"),
-  title: "Valerio Mattera | Senior Frontend Engineer",
+  title: "Valerio Mattera | Full Stack Engineer",
   description: "Valerio Mattera - Portfolio website",
   openGraph: {
     images: [
@@ -24,6 +24,10 @@ export const metadata: Metadata = {
       },
     ],
   },
+  robots: "follow, index",
+  alternates: {
+    canonical: "https://valeriomattera.com",
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -33,7 +37,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" data-theme={themeValue} className="scroll-smooth">
       <body
-        suppressHydrationWarning
         className={`${chakraPetch.className} ${chakraPetch.variable} ${themeValue} relative animate-[fade_1s] font-chakraPetch text-base-content antialiased`}
       >
         {children}

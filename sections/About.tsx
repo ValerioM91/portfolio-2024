@@ -11,9 +11,9 @@ const About = () => {
           <div className="mx-auto flex max-w-prose flex-col gap-4 text-center text-lg text-white md:text-left lg:text-xl">
             <Title title="About me" className="mb-8 text-white lg:text-left" />
             <p>
-              I&apos;m an experienced engineer with a focus on Frontend development. My areas of expertise include
-              TypeScript, React, React Native, and frameworks like Next.js and Remix. Additionally, I have experience in
-              Backend development, primarily with Node.js.
+              I&apos;m an experienced full stack engineer. On the Front End, my areas of expertise include TypeScript,
+              React, Next.js, React Native, and state management libraries. On the Backend, I have experience building
+              RESTful and GraphQL APIs with Node.js, Express, Nest.js, and Serverless.
             </p>
 
             <p>
